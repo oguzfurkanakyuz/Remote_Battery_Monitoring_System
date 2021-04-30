@@ -1,0 +1,8 @@
+esp8266.c:47:6:ESP_Send_Server_Multi	1288	static
+esp8266.c:159:6:ESP8266_Init	24	static
+esp8266.c:278:6:bufclr	24	static
+esp8266.c:311:6:Clear_TC_Flag	4	static
+esp8266.c:316:6:Clear_ESPBuffer	16	static
+esp8266.c:326:6:USART_puts	16	static
+esp8266.c:335:6:Uart_write_kod	16	static
+esp8266.c:353:6:Uart_isr	16	static
