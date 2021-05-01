@@ -1,0 +1,405 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 7906 5921
+encoding utf-8
+Sheet 2 2
+Title "Analog Measurement "
+Date "2021-05-01"
+Rev "1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Thermistor_NTC TH?
+U 1 1 609D161A
+P 1950 3600
+AR Path="/609D161A" Ref="TH?"  Part="1" 
+AR Path="/609AC84F/609D161A" Ref="TH1"  Part="1" 
+F 0 "TH1" H 2047 3646 50  0000 L CNN
+F 1 "NTC_10K" H 2047 3555 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 1950 3650 50  0001 C CNN
+F 3 "~" H 1950 3650 50  0001 C CNN
+	1    1950 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 609D1620
+P 1950 3100
+AR Path="/609D1620" Ref="R?"  Part="1" 
+AR Path="/609AC84F/609D1620" Ref="R13"  Part="1" 
+F 0 "R13" H 2020 3146 50  0000 L CNN
+F 1 "10K" H 2020 3055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1880 3100 50  0001 C CNN
+F 3 "~" H 1950 3100 50  0001 C CNN
+	1    1950 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 609D1626
+P 1950 3750
+AR Path="/609D1626" Ref="#PWR?"  Part="1" 
+AR Path="/609AC84F/609D1626" Ref="#PWR038"  Part="1" 
+F 0 "#PWR038" H 1950 3500 50  0001 C CNN
+F 1 "GND" H 1955 3577 50  0000 C CNN
+F 2 "" H 1950 3750 50  0001 C CNN
+F 3 "" H 1950 3750 50  0001 C CNN
+	1    1950 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 3250 1950 3350
+Wire Wire Line
+	1950 3350 1650 3350
+Connection ~ 1950 3350
+Wire Wire Line
+	1950 3350 1950 3450
+Text Label 1650 3350 0    50   ~ 0
+NTC
+$Comp
+L Sensor_Current:ACS712xLCTR-30A U?
+U 1 1 609D1631
+P 5750 2400
+AR Path="/609D1631" Ref="U?"  Part="1" 
+AR Path="/609AC84F/609D1631" Ref="U5"  Part="1" 
+F 0 "U5" H 6000 2050 50  0000 C CNN
+F 1 "ACS712xLCTR-30A" H 5300 2050 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5850 2050 50  0001 L CIN
+F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/ACS712-Datasheet.ashx?la=en" H 5750 2400 50  0001 C CNN
+	1    5750 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 609D1637
+P 6250 2750
+AR Path="/609D1637" Ref="C?"  Part="1" 
+AR Path="/609AC84F/609D1637" Ref="C22"  Part="1" 
+F 0 "C22" H 6365 2796 50  0000 L CNN
+F 1 "1nF" H 6365 2705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6288 2600 50  0001 C CNN
+F 3 "~" H 6250 2750 50  0001 C CNN
+	1    6250 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 609D163D
+P 6150 1800
+AR Path="/609D163D" Ref="C?"  Part="1" 
+AR Path="/609AC84F/609D163D" Ref="C21"  Part="1" 
+F 0 "C21" V 5898 1800 50  0000 C CNN
+F 1 "100nF" V 5989 1800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6188 1650 50  0001 C CNN
+F 3 "~" H 6150 1800 50  0001 C CNN
+	1    6150 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:Jumper_3_Bridged12 JP?
+U 1 1 609D1643
+P 5750 1450
+AR Path="/609D1643" Ref="JP?"  Part="1" 
+AR Path="/609AC84F/609D1643" Ref="JP3"  Part="1" 
+F 0 "JP3" H 5750 1654 50  0000 C CNN
+F 1 "ACS SUPPLY" H 5750 1563 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5750 1450 50  0001 C CNN
+F 3 "~" H 5750 1450 50  0001 C CNN
+	1    5750 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 1800 5750 1800
+Wire Wire Line
+	6300 1800 6400 1800
+$Comp
+L power:GND #PWR?
+U 1 1 609D164B
+P 6400 1800
+AR Path="/609D164B" Ref="#PWR?"  Part="1" 
+AR Path="/609AC84F/609D164B" Ref="#PWR045"  Part="1" 
+F 0 "#PWR045" H 6400 1550 50  0001 C CNN
+F 1 "GND" H 6405 1627 50  0000 C CNN
+F 2 "" H 6400 1800 50  0001 C CNN
+F 3 "" H 6400 1800 50  0001 C CNN
+	1    6400 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 609D1651
+P 5750 3050
+AR Path="/609D1651" Ref="#PWR?"  Part="1" 
+AR Path="/609AC84F/609D1651" Ref="#PWR043"  Part="1" 
+F 0 "#PWR043" H 5750 2800 50  0001 C CNN
+F 1 "GND" H 5755 2877 50  0000 C CNN
+F 2 "" H 5750 3050 50  0001 C CNN
+F 3 "" H 5750 3050 50  0001 C CNN
+	1    5750 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2800 5750 2950
+Wire Wire Line
+	6150 2500 6250 2500
+Wire Wire Line
+	6250 2500 6250 2600
+Wire Wire Line
+	6250 2900 6250 2950
+Wire Wire Line
+	6250 2950 5750 2950
+Connection ~ 5750 2950
+Wire Wire Line
+	5750 2950 5750 3050
+Wire Wire Line
+	5500 1450 5350 1450
+Wire Wire Line
+	6000 1450 6150 1450
+$Comp
+L power:+5V #PWR?
+U 1 1 609D1660
+P 5350 1450
+AR Path="/609D1660" Ref="#PWR?"  Part="1" 
+AR Path="/609AC84F/609D1660" Ref="#PWR042"  Part="1" 
+F 0 "#PWR042" H 5350 1300 50  0001 C CNN
+F 1 "+5V" H 5365 1623 50  0000 C CNN
+F 2 "" H 5350 1450 50  0001 C CNN
+F 3 "" H 5350 1450 50  0001 C CNN
+	1    5350 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 1600 5750 1800
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 609D166D
+P 4750 2450
+AR Path="/609D166D" Ref="J?"  Part="1" 
+AR Path="/609AC84F/609D166D" Ref="J5"  Part="1" 
+F 0 "J5" H 4668 2125 50  0000 C CNN
+F 1 "ACS INPUT" H 4668 2216 50  0000 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G_1x02_P5.00mm_Horizontal" H 4750 2450 50  0001 C CNN
+F 3 "~" H 4750 2450 50  0001 C CNN
+	1    4750 2450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4950 2350 5150 2350
+Wire Wire Line
+	5150 2350 5150 2200
+Wire Wire Line
+	5150 2200 5350 2200
+Wire Wire Line
+	4950 2450 5150 2450
+Wire Wire Line
+	5150 2450 5150 2600
+Wire Wire Line
+	5150 2600 5350 2600
+Text Label 5250 1800 0    50   ~ 0
+ACS_SUPPLY
+Connection ~ 5750 1800
+Wire Wire Line
+	5750 1800 5750 2000
+Wire Wire Line
+	5750 1800 5250 1800
+Text Label 6300 2400 0    50   ~ 0
+ACS_OUT
+Wire Wire Line
+	6150 2400 6300 2400
+$Comp
+L power:+5V #PWR?
+U 1 1 609D167F
+P 1950 2950
+AR Path="/609D167F" Ref="#PWR?"  Part="1" 
+AR Path="/609AC84F/609D167F" Ref="#PWR037"  Part="1" 
+F 0 "#PWR037" H 1950 2800 50  0001 C CNN
+F 1 "+5V" H 1965 3123 50  0000 C CNN
+F 2 "" H 1950 2950 50  0001 C CNN
+F 3 "" H 1950 2950 50  0001 C CNN
+	1    1950 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VA #PWR044
+U 1 1 60A3BC96
+P 6150 1450
+F 0 "#PWR044" H 6150 1300 50  0001 C CNN
+F 1 "+3.3VA" H 6165 1623 50  0000 C CNN
+F 2 "" H 6150 1450 50  0001 C CNN
+F 3 "" H 6150 1450 50  0001 C CNN
+	1    6150 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 60B0902C
+P 3200 1250
+AR Path="/60B0902C" Ref="J?"  Part="1" 
+AR Path="/609AC84F/60B0902C" Ref="J4"  Part="1" 
+F 0 "J4" H 3280 1242 50  0000 L CNN
+F 1 "Conn_01x04" H 3280 1151 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 3200 1250 50  0001 C CNN
+F 3 "~" H 3200 1250 50  0001 C CNN
+	1    3200 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60B09032
+P 2000 1700
+AR Path="/60B09032" Ref="R?"  Part="1" 
+AR Path="/609AC84F/60B09032" Ref="R14"  Part="1" 
+F 0 "R14" H 2059 1746 50  0000 L CNN
+F 1 "12K" H 2059 1655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2000 1700 50  0001 C CNN
+F 3 "~" H 2000 1700 50  0001 C CNN
+	1    2000 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60B09038
+P 1350 1700
+AR Path="/60B09038" Ref="R?"  Part="1" 
+AR Path="/609AC84F/60B09038" Ref="R11"  Part="1" 
+F 0 "R11" H 1409 1746 50  0000 L CNN
+F 1 "12K" H 1409 1655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 1350 1700 50  0001 C CNN
+F 3 "~" H 1350 1700 50  0001 C CNN
+	1    1350 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60B0903E
+P 1500 1250
+AR Path="/60B0903E" Ref="R?"  Part="1" 
+AR Path="/609AC84F/60B0903E" Ref="R12"  Part="1" 
+F 0 "R12" V 1450 1400 50  0000 C CNN
+F 1 "3.3K" V 1550 1400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 1500 1250 50  0001 C CNN
+F 3 "~" H 1500 1250 50  0001 C CNN
+	1    1500 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60B09044
+P 2150 1350
+AR Path="/60B09044" Ref="R?"  Part="1" 
+AR Path="/609AC84F/60B09044" Ref="R15"  Part="1" 
+F 0 "R15" V 2100 1500 50  0000 C CNN
+F 1 "22K" V 2200 1500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2150 1350 50  0001 C CNN
+F 3 "~" H 2150 1350 50  0001 C CNN
+	1    2150 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60B0904A
+P 2650 1700
+AR Path="/60B0904A" Ref="R?"  Part="1" 
+AR Path="/609AC84F/60B0904A" Ref="R16"  Part="1" 
+F 0 "R16" H 2709 1746 50  0000 L CNN
+F 1 "22K" H 2709 1655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2650 1700 50  0001 C CNN
+F 3 "~" H 2650 1700 50  0001 C CNN
+	1    2650 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60B09050
+P 2800 1450
+AR Path="/60B09050" Ref="R?"  Part="1" 
+AR Path="/609AC84F/60B09050" Ref="R17"  Part="1" 
+F 0 "R17" V 2750 1600 50  0000 C CNN
+F 1 "68K" V 2850 1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2800 1450 50  0001 C CNN
+F 3 "~" H 2800 1450 50  0001 C CNN
+	1    2800 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3000 1450 2900 1450
+Wire Wire Line
+	1400 1250 1350 1250
+Wire Wire Line
+	1350 1250 1350 1600
+Wire Wire Line
+	2050 1350 2000 1350
+Wire Wire Line
+	2000 1350 2000 1600
+Wire Wire Line
+	2700 1450 2650 1450
+Wire Wire Line
+	2650 1450 2650 1600
+$Comp
+L power:GND #PWR?
+U 1 1 60B0905D
+P 3000 1150
+AR Path="/60B0905D" Ref="#PWR?"  Part="1" 
+AR Path="/609AC84F/60B0905D" Ref="#PWR041"  Part="1" 
+F 0 "#PWR041" H 3000 900 50  0001 C CNN
+F 1 "GND" V 3005 1022 50  0000 R CNN
+F 2 "" H 3000 1150 50  0001 C CNN
+F 3 "" H 3000 1150 50  0001 C CNN
+	1    3000 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60B09063
+P 2650 1800
+AR Path="/60B09063" Ref="#PWR?"  Part="1" 
+AR Path="/609AC84F/60B09063" Ref="#PWR040"  Part="1" 
+F 0 "#PWR040" H 2650 1550 50  0001 C CNN
+F 1 "GND" H 2655 1627 50  0000 C CNN
+F 2 "" H 2650 1800 50  0001 C CNN
+F 3 "" H 2650 1800 50  0001 C CNN
+	1    2650 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60B09069
+P 2000 1800
+AR Path="/60B09069" Ref="#PWR?"  Part="1" 
+AR Path="/609AC84F/60B09069" Ref="#PWR039"  Part="1" 
+F 0 "#PWR039" H 2000 1550 50  0001 C CNN
+F 1 "GND" H 2005 1627 50  0000 C CNN
+F 2 "" H 2000 1800 50  0001 C CNN
+F 3 "" H 2000 1800 50  0001 C CNN
+	1    2000 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60B0906F
+P 1350 1800
+AR Path="/60B0906F" Ref="#PWR?"  Part="1" 
+AR Path="/609AC84F/60B0906F" Ref="#PWR036"  Part="1" 
+F 0 "#PWR036" H 1350 1550 50  0001 C CNN
+F 1 "GND" H 1355 1627 50  0000 C CNN
+F 2 "" H 1350 1800 50  0001 C CNN
+F 3 "" H 1350 1800 50  0001 C CNN
+	1    1350 1800
+	1    0    0    -1  
+$EndComp
+Text Label 2650 1450 2    50   ~ 0
+CELL_1
+Wire Wire Line
+	2250 1350 3000 1350
+Text Label 2000 1350 2    50   ~ 0
+CELL_2
+Wire Wire Line
+	1600 1250 3000 1250
+Text Label 1350 1250 2    50   ~ 0
+CELL_3
+$EndSCHEMATC

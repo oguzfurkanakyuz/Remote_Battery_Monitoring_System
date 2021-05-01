@@ -1,0 +1,222 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Micro_SD_Card J?
+U 1 1 609D0EEA
+P 5650 3450
+AR Path="/609D0EEA" Ref="J?"  Part="1" 
+AR Path="/609CA402/609D0EEA" Ref="J?"  Part="1" 
+F 0 "J?" H 5600 4167 50  0000 C CNN
+F 1 "Micro_SD_Card" H 5600 4076 50  0000 C CNN
+F 2 "" H 6800 3750 50  0001 C CNN
+F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 5650 3450 50  0001 C CNN
+	1    5650 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 609D0EF0
+P 4050 3750
+AR Path="/609D0EF0" Ref="R?"  Part="1" 
+AR Path="/609CA402/609D0EF0" Ref="R?"  Part="1" 
+F 0 "R?" V 4100 3600 50  0000 C CNN
+F 1 "10K" V 4100 3900 50  0000 C CNN
+F 2 "" H 4050 3750 50  0001 C CNN
+F 3 "~" H 4050 3750 50  0001 C CNN
+	1    4050 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 609D0EF6
+P 4050 3550
+AR Path="/609D0EF6" Ref="R?"  Part="1" 
+AR Path="/609CA402/609D0EF6" Ref="R?"  Part="1" 
+F 0 "R?" V 4100 3400 50  0000 C CNN
+F 1 "10K" V 4100 3700 50  0000 C CNN
+F 2 "" H 4050 3550 50  0001 C CNN
+F 3 "~" H 4050 3550 50  0001 C CNN
+	1    4050 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 609D0EFC
+P 4050 3350
+AR Path="/609D0EFC" Ref="R?"  Part="1" 
+AR Path="/609CA402/609D0EFC" Ref="R?"  Part="1" 
+F 0 "R?" V 4100 3200 50  0000 C CNN
+F 1 "10K" V 4100 3500 50  0000 C CNN
+F 2 "" H 4050 3350 50  0001 C CNN
+F 3 "~" H 4050 3350 50  0001 C CNN
+	1    4050 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 609D0F02
+P 4050 3250
+AR Path="/609D0F02" Ref="R?"  Part="1" 
+AR Path="/609CA402/609D0F02" Ref="R?"  Part="1" 
+F 0 "R?" V 4100 3100 50  0000 C CNN
+F 1 "10K" V 4100 3400 50  0000 C CNN
+F 2 "" H 4050 3250 50  0001 C CNN
+F 3 "~" H 4050 3250 50  0001 C CNN
+	1    4050 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4150 3250 4750 3250
+Wire Wire Line
+	4150 3350 4750 3350
+Wire Wire Line
+	4150 3550 4750 3550
+Wire Wire Line
+	4150 3750 4750 3750
+$Comp
+L power:+3.3V #PWR?
+U 1 1 609D0F0C
+P 4700 3450
+AR Path="/609D0F0C" Ref="#PWR?"  Part="1" 
+AR Path="/609CA402/609D0F0C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4700 3300 50  0001 C CNN
+F 1 "+3.3V" V 4715 3578 50  0000 L CNN
+F 2 "" H 4700 3450 50  0001 C CNN
+F 3 "" H 4700 3450 50  0001 C CNN
+	1    4700 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4750 3450 4700 3450
+Wire Wire Line
+	4750 3650 4700 3650
+$Comp
+L power:GND #PWR?
+U 1 1 609D0F14
+P 4700 3650
+AR Path="/609D0F14" Ref="#PWR?"  Part="1" 
+AR Path="/609CA402/609D0F14" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4700 3400 50  0001 C CNN
+F 1 "GND" V 4705 3522 50  0000 R CNN
+F 2 "" H 4700 3650 50  0001 C CNN
+F 3 "" H 4700 3650 50  0001 C CNN
+	1    4700 3650
+	0    1    1    0   
+$EndComp
+Text Label 3400 3250 0    50   ~ 0
+SD_CS
+Text Label 3400 3350 0    50   ~ 0
+SD_MOSI
+Text Label 3400 3550 0    50   ~ 0
+SD_SCLK
+Text Label 3400 3750 0    50   ~ 0
+SD_MISO
+Wire Wire Line
+	3400 3750 3950 3750
+Wire Wire Line
+	3400 3550 3950 3550
+Wire Wire Line
+	3400 3350 3950 3350
+Wire Wire Line
+	3400 3250 3950 3250
+$Comp
+L Device:C C?
+U 1 1 609D0F22
+P 6650 3450
+AR Path="/609D0F22" Ref="C?"  Part="1" 
+AR Path="/609CA402/609D0F22" Ref="C?"  Part="1" 
+F 0 "C?" H 6765 3496 50  0000 L CNN
+F 1 "100nF" H 6765 3405 50  0000 L CNN
+F 2 "" H 6688 3300 50  0001 C CNN
+F 3 "~" H 6650 3450 50  0001 C CNN
+	1    6650 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 609D0F2E
+P 6650 3600
+AR Path="/609D0F2E" Ref="#PWR?"  Part="1" 
+AR Path="/609CA402/609D0F2E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6650 3350 50  0001 C CNN
+F 1 "GND" H 6655 3427 50  0000 C CNN
+F 2 "" H 6650 3600 50  0001 C CNN
+F 3 "" H 6650 3600 50  0001 C CNN
+	1    6650 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 609D0F34
+P 7100 3300
+AR Path="/609D0F34" Ref="R?"  Part="1" 
+AR Path="/609CA402/609D0F34" Ref="R?"  Part="1" 
+F 0 "R?" H 7159 3346 50  0000 L CNN
+F 1 "470" H 7159 3255 50  0000 L CNN
+F 2 "" H 7100 3300 50  0001 C CNN
+F 3 "~" H 7100 3300 50  0001 C CNN
+	1    7100 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 609D0F3A
+P 7100 3550
+AR Path="/609D0F3A" Ref="D?"  Part="1" 
+AR Path="/609CA402/609D0F3A" Ref="D?"  Part="1" 
+F 0 "D?" V 7139 3432 50  0000 R CNN
+F 1 "SD CARD LED" V 7048 3432 50  0000 R CNN
+F 2 "" H 7100 3550 50  0001 C CNN
+F 3 "~" H 7100 3550 50  0001 C CNN
+	1    7100 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 609D0F40
+P 7100 3700
+AR Path="/609D0F40" Ref="#PWR?"  Part="1" 
+AR Path="/609CA402/609D0F40" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7100 3450 50  0001 C CNN
+F 1 "GND" H 7105 3527 50  0000 C CNN
+F 2 "" H 7100 3700 50  0001 C CNN
+F 3 "" H 7100 3700 50  0001 C CNN
+	1    7100 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 60A3906C
+P 6650 3300
+F 0 "#PWR?" H 6650 3150 50  0001 C CNN
+F 1 "+3.3VA" H 6665 3473 50  0000 C CNN
+F 2 "" H 6650 3300 50  0001 C CNN
+F 3 "" H 6650 3300 50  0001 C CNN
+	1    6650 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 60A3981F
+P 7100 3200
+F 0 "#PWR?" H 7100 3050 50  0001 C CNN
+F 1 "+3.3VA" H 7115 3373 50  0000 C CNN
+F 2 "" H 7100 3200 50  0001 C CNN
+F 3 "" H 7100 3200 50  0001 C CNN
+	1    7100 3200
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

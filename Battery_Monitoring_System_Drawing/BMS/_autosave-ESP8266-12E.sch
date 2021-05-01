@@ -1,0 +1,165 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RF_Module:ESP-12E U?
+U 1 1 608B7162
+P 4250 3100
+F 0 "U?" H 4650 3850 50  0000 C CNN
+F 1 "ESP-12E" H 3900 3850 50  0000 C CNN
+F 2 "RF_Module:ESP-12E" H 4250 3100 50  0001 C CNN
+F 3 "http://wiki.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manual_v1.1.pdf" H 3900 3200 50  0001 C CNN
+	1    4250 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2300 4250 2200
+$Comp
+L power:GND #PWR?
+U 1 1 608B98D6
+P 4250 4000
+F 0 "#PWR?" H 4250 3750 50  0001 C CNN
+F 1 "GND" H 4255 3827 50  0000 C CNN
+F 2 "" H 4250 4000 50  0001 C CNN
+F 3 "" H 4250 4000 50  0001 C CNN
+	1    4250 4000
+	1    0    0    -1  
+$EndComp
+Text Label 3300 2500 0    50   ~ 0
+ESP_RST
+Wire Wire Line
+	3300 2500 3650 2500
+Wire Wire Line
+	3650 2700 3150 2700
+Wire Wire Line
+	3150 2700 3150 2200
+Wire Wire Line
+	3150 2200 4250 2200
+Connection ~ 4250 2200
+Wire Wire Line
+	4250 2200 4250 2100
+Wire Wire Line
+	4850 3400 5050 3400
+Wire Wire Line
+	5050 3400 5050 3800
+Wire Wire Line
+	5050 3800 4250 3800
+Connection ~ 4250 3800
+Wire Wire Line
+	4250 3800 4250 4000
+Wire Wire Line
+	4850 2600 5200 2600
+Wire Wire Line
+	4850 2800 5200 2800
+Text GLabel 5200 2600 2    50   Input ~ 0
+ESP_TX
+Text GLabel 5200 2800 2    50   Input ~ 0
+ESP_RX
+Wire Wire Line
+	4850 2500 5200 2500
+Text Label 5200 2500 0    50   ~ 0
+ESP_IO0
+$Comp
+L Switch:SW_Push_Dual SW?
+U 1 1 608C54A9
+P 6600 2000
+F 0 "SW?" H 6600 2285 50  0000 C CNN
+F 1 "ESP RESET BUTTON" H 6600 2194 50  0000 C CNN
+F 2 "" H 6600 2200 50  0001 C CNN
+F 3 "~" H 6600 2200 50  0001 C CNN
+	1    6600 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_3_Bridged12 JP?
+U 1 1 608C625A
+P 6800 3450
+F 0 "JP?" V 6754 3517 50  0000 L CNN
+F 1 "ESP BOOT JUMPER" V 6845 3517 50  0000 L CNN
+F 2 "" H 6800 3450 50  0001 C CNN
+F 3 "~" H 6800 3450 50  0001 C CNN
+	1    6800 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6650 3450 6300 3450
+Text Label 6300 3450 0    50   ~ 0
+ESP_IO0
+$Comp
+L power:GND #PWR?
+U 1 1 608C7A92
+P 6800 3700
+F 0 "#PWR?" H 6800 3450 50  0001 C CNN
+F 1 "GND" H 6805 3527 50  0000 C CNN
+F 2 "" H 6800 3700 50  0001 C CNN
+F 3 "" H 6800 3700 50  0001 C CNN
+	1    6800 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 2000 6400 2200
+Wire Wire Line
+	6800 2200 6800 2000
+$Comp
+L Device:C C?
+U 1 1 608C922C
+P 6600 2450
+F 0 "C?" V 6750 2450 50  0000 C CNN
+F 1 "100nF" V 6450 2450 50  0000 C CNN
+F 2 "" H 6638 2300 50  0001 C CNN
+F 3 "~" H 6600 2450 50  0001 C CNN
+	1    6600 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6800 2200 6800 2450
+Connection ~ 6800 2200
+Wire Wire Line
+	6750 2450 6800 2450
+Connection ~ 6800 2450
+Wire Wire Line
+	6800 2450 6800 2600
+Wire Wire Line
+	6450 2450 6400 2450
+Wire Wire Line
+	6400 2450 6400 2200
+Connection ~ 6400 2200
+Wire Wire Line
+	6400 2200 6050 2200
+$Comp
+L power:GND #PWR?
+U 1 1 608CD497
+P 6800 2600
+F 0 "#PWR?" H 6800 2350 50  0001 C CNN
+F 1 "GND" H 6805 2427 50  0000 C CNN
+F 2 "" H 6800 2600 50  0001 C CNN
+F 3 "" H 6800 2600 50  0001 C CNN
+	1    6800 2600
+	1    0    0    -1  
+$EndComp
+Text Label 6050 2200 0    50   ~ 0
+ESP_RST
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 60A37C52
+P 4250 2100
+F 0 "#PWR?" H 4250 1950 50  0001 C CNN
+F 1 "+3.3VA" H 4265 2273 50  0000 C CNN
+F 2 "" H 4250 2100 50  0001 C CNN
+F 3 "" H 4250 2100 50  0001 C CNN
+	1    4250 2100
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
