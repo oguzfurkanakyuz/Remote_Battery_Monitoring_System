@@ -1149,19 +1149,6 @@ $EndComp
 Text Label 10250 1150 0    50   ~ 0
 ESP_RST
 $Comp
-L power:+3.3VA #PWR?
-U 1 1 60A7C96D
-P 8900 750
-AR Path="/608B5F72/60A7C96D" Ref="#PWR?"  Part="1" 
-AR Path="/60A7C96D" Ref="#PWR028"  Part="1" 
-F 0 "#PWR028" H 8900 600 50  0001 C CNN
-F 1 "+3.3VA" H 8915 923 50  0000 C CNN
-F 2 "" H 8900 750 50  0001 C CNN
-F 3 "" H 8900 750 50  0001 C CNN
-	1    8900 750 
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small R6
 U 1 1 60A88B60
 P 8100 3450
@@ -1432,5 +1419,16 @@ F 2 "" H 9000 4050 50  0001 C CNN
 F 3 "" H 9000 4050 50  0001 C CNN
 	1    9000 4050
 	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60D63515
+P 8900 750
+F 0 "#PWR?" H 8900 600 50  0001 C CNN
+F 1 "+3.3V" H 8915 923 50  0000 C CNN
+F 2 "" H 8900 750 50  0001 C CNN
+F 3 "" H 8900 750 50  0001 C CNN
+	1    8900 750 
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
