@@ -277,11 +277,11 @@ Wire Wire Line
 	6250 950  6550 950 
 Wire Wire Line
 	6250 1050 6550 1050
-Text Label 6550 850  0    50   ~ 0
+Text Label 6550 1050 0    50   ~ 0
 SWDIO
 Text Label 6550 950  0    50   ~ 0
 GND
-Text Label 6550 1050 0    50   ~ 0
+Text Label 6550 850  0    50   ~ 0
 SWCLK
 $Comp
 L Switch:SW_Push_Dual SW1
