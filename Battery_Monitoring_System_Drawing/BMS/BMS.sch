@@ -1350,4 +1350,48 @@ F 9 "693071010811" H 9550 4150 50  0001 L BNN "PART-NUMBER"
 $EndComp
 Wire Wire Line
 	8900 4250 8900 4800
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 6095B635
+P 7400 5950
+F 0 "H1" H 7500 5996 50  0000 L CNN
+F 1 "Mounting_Hole" H 7500 5905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 7400 5950 50  0001 C CNN
+F 3 "~" H 7400 5950 50  0001 C CNN
+	1    7400 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 6095C305
+P 8200 5950
+F 0 "H2" H 8300 5996 50  0000 L CNN
+F 1 "Mounting_Hole" H 8300 5905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 8200 5950 50  0001 C CNN
+F 3 "~" H 8200 5950 50  0001 C CNN
+	1    8200 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 609B128C
+P 7400 6150
+F 0 "H3" H 7500 6196 50  0000 L CNN
+F 1 "Mounting_Hole" H 7500 6105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 7400 6150 50  0001 C CNN
+F 3 "~" H 7400 6150 50  0001 C CNN
+	1    7400 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 609B9479
+P 8200 6150
+F 0 "H4" H 8300 6196 50  0000 L CNN
+F 1 "Mounting_Hole" H 8300 6105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 8200 6150 50  0001 C CNN
+F 3 "~" H 8200 6150 50  0001 C CNN
+	1    8200 6150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
